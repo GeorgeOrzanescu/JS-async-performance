@@ -11,7 +11,7 @@ function ajax() {
 }
 
 const responseData = ajax();
-
+console.log("response data for ajax ");
 console.log(responseData); // will be null or undefined
 
 // Simplest way of "waiting" for the response is to use a
