@@ -8,7 +8,6 @@ eventLoop.push(callback1, callback2, callback3);
 // keep going until all callbacks are processed
 while (eventLoop.length > 0 ) {
   _event = eventLoop.shift();
-  eventLoop = eventLoop.slice();
 
   try {
     _event();
